@@ -1,0 +1,281 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vera Storozhenko, NORMA-C, LIC=KIVNN-Y12V5-QIV5M-X0MZ3-C8LHK-X7FB7
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+C:\NORMA\KEIL\ptp\code\MDK-ARM\Discovery.uvproj
+Project File Date:  06/23/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Discovery'
+compiling main.c...
+..\src\main.c(82): warning:  #177-D: variable "USART_InitStructure"  was declared but never referenced
+        USART_InitTypeDef USART_InitStructure;
+..\src\main.c: 1 warning, 0 errors
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_it.c...
+compiling netconf.c...
+compiling telnet.c...
+compiling shell.c...
+compiling stm32f4x7_eth_bsp.c...
+compiling arith.c...
+compiling bmc.c...
+compiling protocol.c...
+compiling ptpd.c...
+compiling msg.c...
+compiling net.c...
+compiling servo.c...
+compiling startup.c...
+compiling sys_time.c...
+compiling timer.c...
+compiling api_lib.c...
+compiling api_msg.c...
+compiling autoip.c...
+compiling def.c...
+compiling dhcp.c...
+compiling dns.c...
+compiling err.c...
+compiling etharp.c...
+compiling icmp.c...
+compiling igmp.c...
+compiling inet.c...
+compiling inet_chksum.c...
+compiling init.c...
+compiling ip.c...
+compiling ip_addr.c...
+compiling ip_frag.c...
+compiling mem.c...
+compiling memp.c...
+compiling pbuf.c...
+compiling netbuf.c...
+compiling netdb.c...
+compiling netif.c...
+compiling netifapi.c...
+compiling raw.c...
+compiling slipif.c...
+compiling sockets.c...
+compiling stats.c...
+compiling sys.c...
+compiling tcp.c...
+compiling tcpip.c...
+compiling tcp_in.c...
+compiling tcp_out.c...
+compiling timers.c...
+compiling udp.c...
+compiling ethernetif.c...
+compiling sys_arch.c...
+compiling RTX_Conf_CM.c...
+compiling rt_CMSIS.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\rt_CMSIS.c: 4 warnings, 0 errors
+compiling rt_Event.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\rt_Event.c: 4 warnings, 0 errors
+compiling rt_List.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\rt_List.c: 4 warnings, 0 errors
+compiling rt_Mailbox.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c(112): warning:  #3731-D: intrinsic is deprecated
+      
+t_inc (&p_MCB->count);
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c(112): warning:  #3731-D: intrinsic is deprecated
+      
+t_inc (&p_MCB->count);
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c(151): warning:  #3731-D: intrinsic is deprecated
+        
+t_dec (&p_MCB->count);
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c(151): warning:  #3731-D: intrinsic is deprecated
+        
+t_dec (&p_MCB->count);
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c(214): warning:  #3731-D: intrinsic is deprecated
+      
+t_dec (&p_MCB->count);
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c(214): warning:  #3731-D: intrinsic is deprecated
+      
+t_dec (&p_MCB->count);
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c(253): warning:  #3731-D: intrinsic is deprecated
+        
+t_inc (&p_CB->count);
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c(253): warning:  #3731-D: intrinsic is deprecated
+        
+t_inc (&p_CB->count);
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c(278): warning:  #3731-D: intrinsic is deprecated
+        
+t_inc (&p_CB->count);
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c(278): warning:  #3731-D: intrinsic is deprecated
+        
+t_inc (&p_CB->count);
+..\..\libraries\rtx-v4.73\SRC\rt_Mailbox.c: 14 warnings, 0 errors
+compiling rt_MemBox.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\rt_MemBox.c(108): warning:  #3731-D: intrinsic is deprecated
+      if ((free = (void **)__ldrex(&((P_BM) box_mem)->free)) == 0) {
+..\..\libraries\rtx-v4.73\SRC\rt_MemBox.c(112): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex((U32)*free, &((P_BM) box_mem)->free));
+..\..\libraries\rtx-v4.73\SRC\rt_MemBox.c(157): warning:  #3731-D: intrinsic is deprecated
+      *((void **)box) = (void *)__ldrex(&((P_BM) box_mem)->free);
+..\..\libraries\rtx-v4.73\SRC\rt_MemBox.c(158): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex ((U32)box, &((P_BM) box_mem)->free));
+..\..\libraries\rtx-v4.73\SRC\rt_MemBox.c: 8 warnings, 0 errors
+compiling rt_Memory.c...
+compiling rt_Mutex.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\rt_Mutex.c: 4 warnings, 0 errors
+compiling rt_Robin.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\rt_Robin.c: 4 warnings, 0 errors
+compiling rt_Semaphore.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\rt_Semaphore.c: 4 warnings, 0 errors
+compiling rt_System.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\rt_System.c(245): warning:  #3731-D: intrinsic is deprecated
+      
+t_dec (&os_psq->count);
+..\..\libraries\rtx-v4.73\SRC\rt_System.c(245): warning:  #3731-D: intrinsic is deprecated
+      
+t_dec (&os_psq->count);
+..\..\libraries\rtx-v4.73\SRC\rt_System.c: 6 warnings, 0 errors
+compiling rt_Task.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\rt_Task.c: 4 warnings, 0 errors
+compiling rt_Time.c...
+assembling SVC_Table.s...
+compiling HAL_CM.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\HAL_CM.c: 4 warnings, 0 errors
+compiling HAL_CM4.c...
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(203): warning:  #3731-D: intrinsic is deprecated
+      if ((cnt = __ldrex(count)) == size) {
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(206): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(cnt+1, count));
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(208): warning:  #3731-D: intrinsic is deprecated
+      c2 = (cnt = __ldrex(first)) + 1;
+..\..\libraries\rtx-v4.73\SRC\rt_HAL_CM.h(210): warning:  #3731-D: intrinsic is deprecated
+    } while (__strex(c2, first));
+..\..\libraries\rtx-v4.73\SRC\ARM\HAL_CM4.c: 4 warnings, 0 errors
+compiling stm32f4_discovery_lcd.c...
+..\..\libraries\STM32F4-Discovery\stm32f4_discovery_lcd.c(935): warning:  #177-D: function "delay"  was declared but never referenced
+  static void delay(__IO uint32_t nCount)
+..\..\libraries\STM32F4-Discovery\stm32f4_discovery_lcd.c(412): warning:  #177-D: function "PutPixel"  was declared but never referenced
+  static void PutPixel(int16_t x, int16_t y)
+..\..\libraries\STM32F4-Discovery\stm32f4_discovery_lcd.c(791): warning:  #177-D: function "LCD_PolyLineRelativeClosed"  was declared but never referenced
+  static void LCD_PolyLineRelativeClosed(pPoint Points, uint16_t PointCount, uint16_t Closed)
+..\..\libraries\STM32F4-Discovery\stm32f4_discovery_lcd.c: 3 warnings, 0 errors
+compiling stm32f4_discovery.c...
+compiling stm32f4xx_usart.c...
+compiling misc.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4x7_eth.c...
+assembling startup_stm32f4xx.s...
+linking...
+Program Size: Code=51150 RO-data=934 RW-data=348 ZI-data=66708  
+".\Discovery\Project.axf" - 0 Error(s), 68 Warning(s).
+Build Time Elapsed:  00:00:43
+</pre>
+</body>
+</html>
